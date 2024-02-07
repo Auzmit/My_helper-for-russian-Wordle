@@ -1,0 +1,58 @@
+<html lang="ru">
+
+<head>
+  <link rel="icon" href="src/favicons/5_letters.png">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="div_arraysNames">
+    
+  </div>
+
+  <div id="arrays">
+    <div class="div_arrRightPlace">
+      <div class="div_Descrip-R-P">
+        Правильные буквы, <br>которые стоят на своём месте:
+      </div>
+      <input id="input_right-letter-1" class="input_right-letter" type="text" maxlength="1">
+      <input id="input_right-letter-2" class="input_right-letter" type="text" maxlength="1">
+      <input id="input_right-letter-3" class="input_right-letter" type="text" maxlength="1">
+      <input id="input_right-letter-4" class="input_right-letter" type="text" maxlength="1">
+      <input id="input_right-letter-5" class="input_right-letter" type="text" maxlength="1">
+    </div>
+  
+    <div class="div_arrWrongPlace">
+      <div class="div_Descrip-W-P">
+        Правильные буквы, <br>которые стоят <b>НЕ</b> на своём месте:
+      </div>
+        <input id="input_wrong-letters-1" class="input_wrong-letters" type="text">
+        <input id="input_wrong-letters-2" class="input_wrong-letters" type="text">
+        <input id="input_wrong-letters-3" class="input_wrong-letters" type="text">
+        <input id="input_wrong-letters-4" class="input_wrong-letters" type="text">
+        <input id="input_wrong-letters-5" class="input_wrong-letters" type="text">
+    </div>
+
+    <div class="div_strNoPlace">
+      <div class="div_Descrip-N-P">
+        Буквы, которых нет в слове:
+      </div>
+      <input id="input_no-letters" type="text"
+      oninput="this.style.width = (this.value.length + 2) + 'ch';">
+    </div>
+  </div>
+
+
+  <div id="resultWords"></div>
+
+  <!-- type="module" -->
+  <script type="module" src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-grey: #302f2f;
+  --color-yellow: #ffdd2d;
+  --color-white: #fff;
+  /* --duration: 0.2s;
+  --timing: ease-in-out; */
+}
+
+html {
+  overflow: auto;
+  /* reserve space for the scrollbar: */
+  scrollbar-gutter: stable;
+}
+
+body {
+  /* cursor: ; */
+
+  /* width: 80%; */
+  background-color: var(--color-grey);
+  /* top-rigth-bottom-left */
+  padding: 3% 10% 0% 10%;
+
+  /* scrollbar-gutter: stable; */
+  /* overflow: overlay; */
+  /* overflow-y: scroll; */
+
+}
+
+#arrays {
+  /* float: left; */
+  /* position: absolute;
+    top: 20%;
+    left: 20%; */
+  padding: 0;
+  margin-right: 10px;
+  border: var(--color-white) solid 2px;
+}
+
+.div_Descrip-R-P,
+.div_Descrip-W-P,
+.div_Descrip-N-P {
+  width: 15vw;
+  float: left;
+
+  color: var(--color-white);
+}
+
+.input_right-letter,
+.input_wrong-letters,
+#input_no-letters {
+  min-width: 3ch;
+  width: 3ch;
+  height: 2.4ch;
+  /* margin-right: 1px; */
+  margin-bottom: 5vh;
+  /* padding: 0 0.5ch; */
+  background-color: var(--color-grey);
+
+  border: 2px solid;
+  border-color: var(--color-yellow);
+  border-radius: 8px;
+
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+
+  outline: none;
+}
+#input_no-letters {
+  /* width: 10ch;  */
+  margin-bottom: 0;
+  /* width: auto; */
+}
+.input_right-letter:focus,
+.input_wrong-letters:focus,
+#input_no-letters:focus {
+  border: 3px solid;
+  border-color: white;
+  
+  /* outline-offset: -1px; */
+  /* outline-color: var(--color-yellow); */
+  /* background-color: var(--color-yellow); */
+}
+
+/* .lineSpace {
+  display: block;
+  width: 100%;
+  height: 10%;
+} */
+
+#resultWords {
+  flex-direction: column;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.divWordsQuantity {
+  /* display: block; */
+  /* width: 100%; */
+  padding: 1%;
+
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-white);
+}
+
+.divWord {
+  display: inline-block;
+  padding: 1%;
+
+  font-family: 'Courier New', Courier, monospace;
+  color: aqua;
+}
