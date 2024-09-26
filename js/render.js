@@ -20,7 +20,7 @@ export default (resultState, arrWords) => {
   divResultWords.innerHTML = '';
 
   const divWordsQuantity = document.createElement('div');
-  divWordsQuantity.textContent = arrWords.length;
+  divWordsQuantity.textContent = `подходящих слов: ${arrWords.length}`;
   divWordsQuantity.classList.add('divWordsQuantity');
   // console.log(divWordsQuantity.textContent);
   // console.log(divWordsQuantity);

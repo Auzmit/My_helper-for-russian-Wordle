@@ -21,7 +21,13 @@ body {
   /* cursor: ; */
 
   /* width: 80%; */
-  background-color: var(--color-grey);
+  /* background-color: var(--color-grey); */
+
+  background-image: url('../src/background/opacity-10_light-gauss.png');
+  background-size: 100%;
+  background-repeat: repeat-y;
+  /* background-position: center; */
+  
   /* top-rigth-bottom-left */
   padding: 3% 10% 0% 10%;
 
@@ -38,13 +44,13 @@ body {
     left: 20%; */
   padding: 0;
   margin-right: 10px;
-  border: var(--color-white) solid 2px;
+  /* border: var(--color-white) solid 2px; */
 }
 
 .div_Descrip-R-P,
 .div_Descrip-W-P,
 .div_Descrip-N-P {
-  width: 15vw;
+  width: 25vw;
   float: left;
 
   color: var(--color-white);
